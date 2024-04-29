@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "endpoints": [
+      {
+        "endpoint": "/api",
+        "backend": [
+          {
+            "url_pattern": "/weather",
+            "host": ["http://localhost:5050"]
+          }
+        ]
+      }
+    ]
+  }

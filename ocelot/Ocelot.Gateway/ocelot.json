@@ -1,0 +1,19 @@
+{
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/weather",
+        "DownstreamScheme": "http",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "localhost",
+            "Port": 5050
+          }
+        ],
+        "UpstreamPathTemplate": "/api/weather",
+        "UpstreamHttpMethod": [ "Get" ]
+      }
+    ],
+    "GlobalConfiguration": {
+      "BaseUrl": "https://localhost:5050"
+    }
+  }

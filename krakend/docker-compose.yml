@@ -1,0 +1,11 @@
+version: '3'
+services:
+  krakend:
+    image: devopsfaith/krakend
+    ports:
+      - 8080:8080
+    volumes:
+      - ./krakend.json:/etc/krakend/krakend.json
+    depends_on:
+      - user-service
+      - product-service
