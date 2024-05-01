@@ -127,6 +127,14 @@ services:
     volumes:
       - kong_data:/var/lib/postgresql/data
 
+  weather-service:
+    container_name: service
+    build: ../service/Service.API
+    networks:
+      - kong-net
+    ports:
+      - "8080:8080"
+
 secrets:
   kong_postgres_password:
     file: ./POSTGRES_PASSWORD

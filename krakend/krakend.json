@@ -1,14 +1,28 @@
 {
-    "version": 3,
-    "endpoints": [
-      {
-        "endpoint": "/api",
-        "backend": [
-          {
-            "url_pattern": "/weather",
-            "host": ["http://localhost:5050"]
-          }
-        ]
-      }
-    ]
-  }
+  "$schema": "https://www.krakend.io/schema/krakend.json",
+  "version": 3,
+  "name": "KrakenD - API Gateway",
+  "timeout": "3000ms",
+  "cache_ttl": "300s",
+  "output_encoding": "json",
+  "port": 9090,
+  "endpoints": [
+    {
+      "endpoint": "/weather",
+      "method": "GET",
+      "output_encoding": "string",
+      "backend": [
+        {
+          "url_pattern": "/weather",
+          "encoding": "string",
+          "sd": "static",
+          "method": "GET",
+          "host": [
+            "http://service:8080"
+          ],
+          "disable_host_sanitize": false
+        }
+      ]
+    }
+  ]
+}

@@ -5,15 +5,15 @@
         "DownstreamScheme": "http",
         "DownstreamHostAndPorts": [
           {
-            "Host": "localhost",
-            "Port": 5050
+            "Host": "service",
+            "Port": 8080
           }
         ],
-        "UpstreamPathTemplate": "/api/weather",
+        "UpstreamPathTemplate": "/weather",
         "UpstreamHttpMethod": [ "Get" ]
       }
     ],
     "GlobalConfiguration": {
-      "BaseUrl": "https://localhost:5050"
+      "BaseUrl": "https://service:8080"
     }
   }

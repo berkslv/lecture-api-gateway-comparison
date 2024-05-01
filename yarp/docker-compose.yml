@@ -1,22 +1,20 @@
 version: '3'
 services:
-  krakend:
-    image: devopsfaith/krakend
+  yarp:
+    build: ./Yarp.Gateway
     ports:
-      - 9090:9090
-    volumes:
-      - ./krakend.json:/etc/krakend/krakend.json
+      - 9090:8080
     networks:
-      - krakend-net
+      - yarp-net
 
   weather-service:
     container_name: service
     build: ../service/Service.API
     networks:
-      - krakend-net
+      - yarp-net
     ports:
       - "8080:8080"
 
 networks:
-  krakend-net:
+  yarp-net:
     external: false

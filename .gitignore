@@ -3,6 +3,13 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+/apisix_log/*
+!/apisix_log/.keep
+
+/etcd_data/*
+!/etcd_data/.keep
+
+
 # dotenv files
 .env
 
