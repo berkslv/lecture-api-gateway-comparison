@@ -22,33 +22,33 @@ Document Path:          /weather
 Document Length:        14 bytes
 
 Concurrency Level:      50
-Time taken for tests:   207.663 seconds
+Time taken for tests:   207.499 seconds
 Complete requests:      10000
 Failed requests:        0
 Keep-Alive requests:    0
-Total transferred:      2730009 bytes
+Total transferred:      2730028 bytes
 HTML transferred:       140000 bytes
-Requests per second:    48.15 [#/sec] (mean)
-Time per request:       1038.316 [ms] (mean)
-Time per request:       20.766 [ms] (mean, across all concurrent requests)
-Transfer rate:          12.84 [Kbytes/sec] received
+Requests per second:    48.19 [#/sec] (mean)
+Time per request:       1037.494 [ms] (mean)
+Time per request:       20.750 [ms] (mean, across all concurrent requests)
+Transfer rate:          12.85 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.2      0       5
-Processing:  1003 1030 124.8   1017    3254
-Waiting:     1003 1029 124.7   1016    3253
-Total:       1003 1030 124.9   1017    3256
+Connect:        0    0   0.2      0       4
+Processing:  1002 1032 120.5   1018    3369
+Waiting:     1002 1031 120.5   1018    3369
+Total:       1002 1032 120.7   1019    3373
 
 Percentage of the requests served within a certain time (ms)
-  50%   1017
-  66%   1020
-  75%   1023
-  80%   1024
-  90%   1030
-  95%   1036
-  98%   1050
-  99%   1341
- 100%   3256 (longest request)
+  50%   1019
+  66%   1023
+  75%   1026
+  80%   1028
+  90%   1034
+  95%   1043
+  98%   1066
+  99%   1326
+ 100%   3373 (longest request)
 
 ```

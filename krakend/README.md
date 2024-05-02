@@ -14,7 +14,7 @@ docker-compose up -d
 
 ab -k -n 10000 -c 50 http://localhost:9090/weather
 
-Server Software:        
+Server Software:
 Server Hostname:        localhost
 Server Port:            9090
 
@@ -22,35 +22,35 @@ Document Path:          /weather
 Document Length:        14 bytes
 
 Concurrency Level:      50
-Time taken for tests:   206.298 seconds
+Time taken for tests:   206.359 seconds
 Complete requests:      10000
-Failed requests:        15
-   (Connect: 0, Receive: 0, Length: 15, Exceptions: 0)
-Non-2xx responses:      15
+Failed requests:        9
+   (Connect: 0, Receive: 0, Length: 9, Exceptions: 0)
+Non-2xx responses:      9
 Keep-Alive requests:    10000
-Total transferred:      2438920 bytes
-HTML transferred:       139790 bytes
-Requests per second:    48.47 [#/sec] (mean)
-Time per request:       1031.488 [ms] (mean)
-Time per request:       20.630 [ms] (mean, across all concurrent requests)
-Transfer rate:          11.55 [Kbytes/sec] received
+Total transferred:      2439352 bytes
+HTML transferred:       139874 bytes
+Requests per second:    48.46 [#/sec] (mean)
+Time per request:       1031.795 [ms] (mean)
+Time per request:       20.636 [ms] (mean, across all concurrent requests)
+Transfer rate:          11.54 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    0   0.3      0       5
-Processing:  1001 1024 122.7   1010    3076
-Waiting:     1001 1024 122.7   1010    3076
-Total:       1001 1024 122.9   1010    3081
+Connect:        0    0   0.1      0       3
+Processing:  1000 1024 122.7   1010    3021
+Waiting:     1000 1024 122.7   1010    3021
+Total:       1000 1024 122.8   1010    3023
 
 Percentage of the requests served within a certain time (ms)
   50%   1010
   66%   1012
-  75%   1014
+  75%   1013
   80%   1015
-  90%   1019
+  90%   1018
   95%   1023
-  98%   1041
-  99%   1547
- 100%   3081 (longest request)
+  98%   1037
+  99%   1520
+ 100%   3023 (longest request)
 
 ```
